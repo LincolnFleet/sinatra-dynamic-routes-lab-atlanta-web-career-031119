@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <h1><% case @operation
+            when "add" %>
+                <%= @num1%2B@num2 %>
+            <% when "subtract" %>
+                <%= @num1%2D@num2 %>
+            <% when "multiply"%>
+                <%= @num1%2A@num2 %>
+            <% when "divide" %>
+                <%= @num1%2F@num2 %>
+        <%end%>
+    </h1>
+</html>
